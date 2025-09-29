@@ -1,6 +1,6 @@
 # TrainsCustomFetch JS
 
-**TrainsCustomFetch JS** es un módulo ligero y reutilizable para realizar peticiones HTTP desde frontend o backend. Soporta **GET, POST, PUT y DELETE**, manejo de headers, datos y errores. Ideal para pruebas de APIs, integraciones rápidas y entornos backend como PHP o Node.js.
+**TrainsCustomFetch JS** es un módulo ligero y reutilizable para realizar peticiones HTTP desde frontend o backend. Soporta **GET, POST, PUT y DELETE**, manejo de headers, datos y errores. Ideal para pruebas de APIs, integraciones rápidas y entornos backend como PHP.
 
 ---
 
