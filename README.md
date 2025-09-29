@@ -19,5 +19,5 @@
 Puedes incluirlo directamente en tu proyecto:
 
 ```html
-<script src="customFetch.js"></script>
+<script src="TrainsCustomFetch.js"></script>
 
