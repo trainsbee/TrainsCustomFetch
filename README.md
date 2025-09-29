@@ -1,23 +1,20 @@
-# TrainsCustomFetch JS
+# TrainsCustomFetch
 
-**TrainsCustomFetch JS** es un módulo ligero y reutilizable para realizar peticiones HTTP desde frontend o backend. Soporta **GET, POST, PUT y DELETE**, manejo de headers, datos y errores. Ideal para pruebas de APIs, integraciones rápidas y entornos backend como PHP.
+**TrainsCustomFetch** es un cliente HTTP en **JavaScript Vanilla** pensado para integrarse con **Supabase** y cualquier API REST.  
+Incluye `CustomFetch` para peticiones, `Routers` para centralizar endpoints y `FormHandler` para conectar formularios HTML con tus servicios de backend.
 
 ---
 
 ## Características
 
-- Soporte para métodos HTTP comunes: `GET`, `POST`, `PUT`, `DELETE`.
-- Manejo automático de **headers** y **body**.
-- Manejo centralizado de **errores**.
-- Compatible con **frontend y backend**.
-- Fácil de integrar y reutilizar.
+- Peticiones **GET, POST, PUT, DELETE** con headers dinámicos.  
+- Compatible con **Supabase REST / Auth / RPC**.  
+- `FormHandler` convierte cualquier `<form>` en una llamada a tu API.  
+- `Routers` centraliza endpoints y métodos.  
+- Manejo de errores y respuestas con `Handlers` personalizables.  
 
 ---
 
 ## Instalación
 
-Puedes incluirlo directamente en tu proyecto:
-
-```html
-<script src="TrainsCustomFetch.js"></script>
-
+Copia los archivos en tu proyecto:
