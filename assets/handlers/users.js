@@ -1,3 +1,6 @@
+
+import { validateFields } from '../utils/validations.js';
+
 async function processResponse(response, handlerName) {
     try {
         return await response;
@@ -26,11 +29,13 @@ export async function getUser(response) {
 export async function setUser(response) {
     const data = await processResponse(response, 'Users');
     console.log(data)
-        // Validación en el handler
-        if (!data?.data?.name) {
-            console.error("El campo 'name' está vacío");
-            return;
-        }
+    const validation = validateFields(data?.data, ["name", "email"]);
+
+    if (!validation.isValid) {
+        console.error("❌ Faltan campos:", validation.missingFields);
+        // Aquí podrías enviar `validation.missingFields` al front
+        return validation;
+    }
     switch (data.status) {
         case 'success':
             console.log(data.data)
